@@ -25,21 +25,15 @@ haxelib git hxCodec https://github.com/ItsyourboyJonnycat/hxCodec-old-version.gi
 <haxedef name="HXCPP_ARM64" />
 ``` 
 
-### 4. **OPTIONAL: if you want to embed it `Project.xml`:**
-
-```haxe
-<assets path="assets/preload/videos" embed='true'/> 
-```
-
-### 6. Edit `Paths.hx`
+### 4. Edit `Paths.hx`
 ```haxe
 inline static public function video(key:String, ?library:String)
 {
-	return getPath('assets/preload/videos/$key.mp4', BINARY, library);
+	return getPath('videos/$key.mp4', BINARY, library);
 }
 ```
 
-### 7. Playing videos
+### 5. Playing videos
 
 1. Put your video in `assets/preload/videos`.
 2. Create somewhere in PlayState:
