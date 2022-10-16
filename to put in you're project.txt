@@ -1,0 +1,1 @@
+<assets path="assets/preload/videos" rename="assets/videos" include="*.mp4" embed='false' />
